@@ -1,0 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    background: var(--color-texto);
+    transition: 2s;
+}
+
+.dark{
+    background: black;
+    transition: 2s;
+}
+
+h1,h2,h4,h5,h6{
+    color: black;
+    font-size: 64px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.dark h1,h2,h3,h4,h5,h6{
+    color: #EAF6F6;
+}
+
+p,li,a,label,input,textarea,select,table{
+    color: black;
+    font-family: 'Lora', sans-serif;
+}
+
+.dark p,li,a,label,input,textarea,select,table{
+    color: #EAF6F6;
+}
+/* Variables de css */
+:root{
+    --font-title :'Kanit', sans-serif;
+    --font-texts :'Lora', sans-serif;
+    --color-texto: #EAF6F6;
+}
+
+
+/* .bg-portafolio Selector */
+.bg-portafolio{
+    background: #66BFBF;
+}
+.bg-portafolioT{
+    background: transparent;
+}
+
+.home header{
+    width: 100%;
+    height: 90vh;
+    background: url("../img/Polygon\ 1.png") no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+header{
+    width: 100%;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+nav ul li{
+    margin: 15px;
+}
+
+nav ul li a{
+    color: var(--color-texto) !important;
+    border-bottom: 2px solid transparent;
+}
+
+
+
+/* Boton switch */
+.switch{
+   
+    background: #66BFBF;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after{
+    
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #FF0063;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px #EAF6F6;
+}
+
+.active{
+   
+   
+    color: black;
+}
+
+.active::after{
+  
+    right: 0;
+    left: unset;
+}
+
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #FF0063;
+}
+
+
+
+nav ul li a:hover{
+    border-bottom: 2px solid #FF0063;
+    color: #FF0063 !important; 
+}
+
+.bg-portafolioT ul li a{
+    color: #66BFBF !important; 
+}
+
+.bg-portafolioT ul li a.btn-boton{
+    color: #EAF6F6 !important;
+}
+
+.btn-boton{
+    background: #FF0063;
+    color: #EAF6F6 !important;
+    border-radius: 35px;
+}
+
+.btn-boton:hover{
+    background: #66BFBF;
+    color: #FF0063!important;
+    border-radius: 35px;
+}
+
+#hero1 h4{
+    color: black;
+}
+
+.dark #hero1 h4{
+    color: #EAF6F6;
+}
+
+#hero1 .hero-left{
+    border-right: #FF0063 solid 2px;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.hero-left{
+    text-align: left;
+    padding-top: 10%;
+
+}
+
+.hero-left h2{
+    font-size: 64px;
+    font-weight: 700;
+    padding-left: 120px;
+    
+}
+
+.hero-left h4{
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 0px;
+    
+    
+}
+
+
+.btn-portafolio{
+    margin-left: 260px;
+    color: var(--color-texto);
+    background: #FF0063;
+    border-radius: 35px;
+    width: 30%;
+    padding: 6px 70px;
+    margin-top: 100px;
+}
+
+.hero-right img{
+    margin-top: 150px;
+}
+
+#redes{
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+/* Agregar stilos a las casillas */
+
+header #servicios{
+    width: 100%;
+    padding-top: 90px;   
+    
+
+}
+
+#servicios .row .casillas{
+    width: 80%;
+    padding: 40px;
+    box-shadow: 0px 4px 8px -5px gray;
+    margin-top: 50px;
+    background: white;
+    position: relative;
+    border-radius: 35px;
+    margin-left: 10%;
+
+}
+
+#servicios .row .casillas:hover{
+    left: 0;
+    top: 0;
+    background: #EBC7E6;
+    z-index: 1;
+    transition: .4s;
+}
+
+#servicios .row .casillas::after{
+    height: 100%;
+}
+
+#servicios .row h2{
+    font-size: 64px;
+    color: black;
+}
+
+.dark #servicios .row h2{
+    font-size: 64px;
+    color: #EAF6F6;
+}
+ 
+.casillas h3{
+    color: black;
+}
+
+.casillas p{
+    color: black;
+}
+
+/* Stilos sobre mi primera seccion */
+section {
+    padding-top: 80px;
+}
+
+#fila{
+    width: 100%;
+    display: flex;
+}
+
+#personal{
+    width: 60%;
+    padding-left: 60px;
+}
+
+#personal h3{
+    color: black;
+    font-size: 64px;
+}
+
+.dark #personal h3{
+    color: #EAF6F6;
+    font-size: 64px;
+}
+
+#personal p{
+    color: black;
+}
+
+.dark #personal p{
+    color: #EAF6F6;
+}
+
+#personal article{
+    border: 4px solid #66BFBF;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#personal article{
+    padding-top: 10px;
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+}
+
+#personal article ul li{
+    list-style: none;
+    color: black;
+}
+
+.dark #personal article ul li{
+    list-style: none;
+    color: #EAF6F6;
+}
+
+#habilidades h5{
+    color: black;
+}
+
+.dark #habilidades h5{
+    color: #EAF6F6;
+}
+
+#titulos h2{
+    color: black;
+}
+
+.dark #titulos h2{
+    color: #EAF6F6;
+}
+
+#por article img{
+    width: 70%;
+    display: flex;
+    border-radius: 35px;
+    
+}
+
+/* Seccion sobre mi acordion */
+#por .col-md-6 button{
+   background: #EAF6F6;
+   border: #FF0063 !important;
+}
+
+#por .carrucel{
+   display: flex;
+}
+
+#habilidades .container img{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 140px;
+}
+
+header #por img{
+    display: flex;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767px){
+    .desktop{
+     display: none;
+    }
+
+    .tablet{
+    display: none;
+    }
+
+    .movil{
+     display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px){
+    .desktop{
+        display: none;
+       }
+
+       .movil{
+        display: none;
+       }  
+}
+
+@media (min-width: 991px){
+    .tablet{
+        display: none;
+        }
+
+        .movil{
+            display: none;
+           }
+}
